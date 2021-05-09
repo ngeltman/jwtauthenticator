@@ -1,0 +1,15 @@
+spring:
+ application:
+  name: security-service
+ cloud:
+  config:
+   uri: http://localhost:8888
+   username: root
+   password: 12345678
+ boot:
+  admin:
+   client:
+    url: http://localhost:8086
+    instance: 
+     serviceBaseUrl: http://localhost:8086
+     health-url: http://localhost:8092/actuator/health/
